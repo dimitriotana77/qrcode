@@ -1,0 +1,64 @@
+/* General styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Card styles */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  max-width: 320px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card h1 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+}
+
+.card p {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1440px) {
+  .card {
+    max-width: 350px;
+    padding: 2rem;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
